@@ -1,0 +1,291 @@
+.header-top {
+	background: #f2f2f2;
+} 
+
+.header-left {
+	float: left;
+	padding: 10px 0;
+
+	.contact {
+		display: flex;	
+		li p {
+			color: #666666;
+			line-height: 20px;
+			font-size: 14px;
+			display: block;
+			padding-right: 10px;
+			span {
+				padding-left: 5px;
+				
+				&:first-child {
+					padding-left: 0;
+				}
+			}
+		}
+		.phone {
+			span {
+				font-weight: bold;
+			}
+		}
+		.dropdown-customer {
+			padding-left: 20px;	
+		}
+	}
+}		
+
+.dropdown-menu::before {
+	content: '';
+	top: -5px;
+    right: 12px;
+    position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 5px 5px 5px;
+	border-color: transparent transparent #b1b2b3 transparent;
+}
+
+li:hover .dropdown-menu {
+	display: block;
+}
+
+.dropdown-menu {
+	display: none;
+	left: -4.5em;
+	top: 27px;
+	li {
+		float: right;
+	}
+}
+
+.currency {
+	border-right: 1px solid #E5E5E5;
+}	
+
+.header-right {
+	float: right;
+	padding: 10px 0;
+	.register-menu {
+		display: flex;
+		li {
+			padding-left: 20px;
+			border-left: 1px solid #666666;
+			padding-right: 10px;
+			a {
+				color: #666666;
+			&:hover, &:focus {
+			color: #EA3A3C;
+			text-decoration: none;
+			outline: none;
+			}
+			}
+		&:first-child {
+			padding-left: 0;
+			border-left: none;
+		}
+		}
+	}	
+}	
+
+.modal-header-title {
+	background: #444444;
+}
+
+.modal-title-login {
+	color: #ffffff;
+}
+
+.text-login p {
+	padding: 20px;
+}
+
+.register {
+	padding-bottom: 20px;
+}
+
+.password {
+	label {
+	padding-right: 25px;
+	font-weight: bold;
+	}
+}
+
+.email {
+	label {
+	padding-right: 48px;
+	font-weight: bold;
+	}
+}
+
+.register-input {
+	padding: 5px 10px;
+	outline: none;
+}
+
+.btn-signin {
+	text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 0;
+    padding: 12px;
+    line-height: 12px;
+    float: left;
+}
+
+.menu-main {
+	padding-top: 20px;
+	.logo {
+		padding: 0;
+	}
+}
+
+.navbar-menu {
+	padding-top: 15px;
+	a {
+	text-transform: uppercase;
+	font-weight: bold;
+	}
+}
+
+.navbar-default {
+	border-color: #ffffff;
+	background-color: #ffffff;
+	.navbar-nav{
+		.active {	
+			a, &:focus, &:hover {
+			background-color: #fff;
+			color: #D12C2E;
+			}
+		}
+	}
+	.nav-menu-main {
+		li {
+			a {
+			color: #555;
+			font-size: 18px;
+			&:hover {
+			color: #D12C2E;
+			}
+			}
+		}
+		.active {
+			a {
+			&:hover,&:focus {
+				background-color: #fff;
+   			 	outline: none;
+				color: #D12C2E;
+			}
+			}
+		}
+	}
+}
+
+.navbar-menu-main {
+	margin-left: -20px!important;
+}
+
+.header-bottom {
+	padding-top: 20px;
+}
+
+.category {
+	margin-left: -30px;
+	.title-category {
+		background: #EA3A3C;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #ffffff;
+		font-size: 20px;
+		.fa-bars {
+			background: #D12C2E;
+			padding: 15px;
+		}
+	}
+	.category-menu {
+		border: 1px solid #dddddd;
+		li {
+			padding: 15px;
+			text-transform: uppercase;
+			padding-left: 5px;
+			font-size: 14px;
+			color: #404040;
+			&:last-child {
+			padding-left: 30px;
+			font-size: 12px;
+			}
+			&:hover{
+				color: #fff;
+				text-decoration: none;
+				background: #EA3A3C;
+			}
+			.fa {
+				padding: 0 10px;
+			}
+		}
+	}
+}
+
+.box-search {
+	position: relative;
+	.search-item {
+		padding: 10px;
+		width: 90%;
+		border: 1px solid #DDDDDD;
+		outline: none;
+	}
+	.search-fix {
+		border: none;
+		background: #EA3A3C;
+		position: absolute;
+		top:0;
+		.fa-search-plus {
+			padding: 10px;
+			color: #fff;
+			font-size: 18px;
+			font-weight: bold;
+		}
+	}
+}
+
+.fa-icon {
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.header-right-bottom {
+	margin-right: -20px;
+    margin-left: 40px;
+	padding-top: 10px;
+	.shopping-bag {
+		position: relative;
+		span {
+			width: 25px;
+			text-align: center;
+			border: 5px solid #EA3A3C;
+			background: #EA3A3C;
+			color: #fff;
+			border-radius: 50%;
+			top: -30px;
+			right: 0px;
+			position: absolute;
+
+		}
+	}
+}
+
+.slider-header {
+	padding-top: 100px;
+    padding-left: 15px;
+}
+
+.carousel-slider {
+	position: absolute;
+	left: 685px;
+	.active {
+		background-color: #869791;
+		border: none;
+	}
+	li {
+		background-color: #BAC1BE;
+		border: none;
+	}
+}
